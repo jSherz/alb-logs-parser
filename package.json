@@ -1,0 +1,44 @@
+{
+  "name": "alb-logs-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jSherz.com",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.26",
+    "@types/bluebird": "^3.5.26",
+    "@types/elasticsearch": "^5.0.32",
+    "@types/ip": "^1.1.0",
+    "@types/jest": "^24.0.13",
+    "@types/lodash": "4",
+    "@types/node": "8",
+    "prettier": "^1.17.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "aws-lambda": "^0.1.2",
+    "aws-sdk": "^2.463.0",
+    "bluebird": "^3.5.4",
+    "elasticsearch": "^16.0.0",
+    "fast-csv": "^2.5.0",
+    "ip": "^1.1.5",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.11"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "tslint --format stylish -p .",
+    "build": "tsc -p .",
+    "package": "rm -rf lib/* && yarn build && NODE_ENV=production yarn && zip -r function.zip lib/ node_modules/ package.json && yarn"
+  }
+}

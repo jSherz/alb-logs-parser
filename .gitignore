@@ -1,0 +1,9 @@
+node_modules/
+lib/
+yarn-error.log
+.idea/
+function.zip
+terraform.tfvars
+terraform.tfstate*
+.terraform
+.DS_Store
