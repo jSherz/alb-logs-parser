@@ -1,7 +1,9 @@
 # alb-logs-parser
 
 Parses the access logs produced by an Application Load Balancer and sends them
-to Elasticsearch.
+to Elasticsearch. Read the accompanying blog post at [jsherz.com].
+
+[jsherz.com]: https://jsherz.com/elasticsearch/aws/alb/application%20load%20balancer/kibana/geoip/2019/05/28/visualising-alb-logs-with-elasticsearch.html
 
 ## Setting up the parser
 
@@ -265,9 +267,9 @@ See: https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geoip-processor
 
 ## Kibana dashboard
 
-You can find an importable Kibana dashboard in `dashboard.json` in the root
-directory of the project. This can be imported to visualise the logs if you keep
-the default index prefix in the parser.
+You can find an importable Kibana dashboard in `kibana-dashboard.json` in the
+root directory of the project. This can be imported to visualise the logs if you
+keep the default index prefix in the parser.
 
 See: https://www.elastic.co/guide/en/kibana/current/dashboard-import-api-import.html
 
